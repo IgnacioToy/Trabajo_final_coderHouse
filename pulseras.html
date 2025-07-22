@@ -10,61 +10,54 @@
     <link rel="stylesheet" href="./scss/style.css">
 </head>
 <body>
+
+    <header class="header">
+
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top transition-navbar">
+
+        <div class="container">
+
+            <a class="navbar-brand navbar__img" href="index.html"><img src="./imagenes/LogoPrincippal.jpeg" alt="Logo"></a>
+
+            <h1 class="titulo__header">Valentina Bonkovki</h1>
+        
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+                    <span class="navbar-toggler-icon"></span>
+              </button>
     
-        <header class="header">
+            <div class="collapse navbar-collapse header__list" id="navbarNavDropdown">
 
-          <nav class="navbar navbar-expand-lg navbar-light fixed-top transition-navbar">
+                <ul class="navbar-nav ms-auto">
 
-            <div class="container">
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
 
-                <a class="navbar-brand navbar__img" href="index.html">
-                    <img src="./imagenes/LogoPrincippal.jpeg" alt="Logo">
-                </a>
+                    <li class="nav-item dropdown">
 
-                <h1 class="titulo__header">Valentina Bonkovki</h1>
-            
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
-                        <span class="navbar-toggler-icon"></span>
-                  </button>
-       
-                <div class="collapse navbar-collapse header__list" id="navbarNavDropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="return false;">Productos</a>
+                        
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item submenu" href="anillos.html">Anillos</a></li>
+                            <li><a class="dropdown-item submenu" href="pulseras.html">Pulseras</a></li>
+                            <li><a class="dropdown-item submenu" href="aros.html">Aros</a></li>
+                        </ul>
 
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item ">
-                            <a class="nav-link active" href="index.html">Inicio</a>
-                        </li>
+                    </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="return false;">Productos</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item submenu" href="anillos.html">Anillos</a></li>
-                                <li><a class="dropdown-item submenu" href="pulseras.html">Pulseras</a></li>
-                                <li><a class="dropdown-item submenu" href="aros.html">Aros</a></li>
-                            </ul>
-                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contactos</a>
+                    </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contactos</a>
-                        </li>
-                    </ul>
-                </div>
+                </ul>
+
             </div>
 
-          </nav>
+        </div>
 
-        </header>
-
-
-
-
-
-
-
-
-
-
-
-
+      </nav>
+      
+    </header>
 
     <section class="hero__pulseras-destacado">
 
@@ -103,6 +96,7 @@
                     <img src="/imagenes/fotos_pulseras/fondo2.jpeg" alt="Descripción 3">
                 </div>
             </div>
+
         </div>
 
     </section>

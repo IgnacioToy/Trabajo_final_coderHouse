@@ -1,30 +1,119 @@
 @media (max-width: 768px) {
-    .tarjeta-producto {
-        width: 90%;
+  // Tarjetas de productos
+  .tarjeta-producto {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .tarjeta-producto img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+
+  // Sección novedades
+  .seccion__novedades {
+    padding: 30px 15px;
+
+    .row {
+      flex-direction: column-reverse;
+    }
+  }
+
+  // Títulos y párrafos
+  h2 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  // Hero
+  .hero {
+    height: 60vh;
+    background-position: center;
+    text-align: center;
+
+    .hero__texto {
+      font-size: 1.2rem;
+      padding: 0 15px;
+    }
+  }
+
+  // Header / navbar
+  .navbar-brand img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .titulo__header {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  // Carrusel
+  .carousel-item img {
+    height: auto;
+    object-fit: cover;
+  }
+
+  // Cards
+  .card {
+    margin-bottom: 20px;
+  }
+
+  // Triple layout
+  .triple__section {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    img {
+      width: 100%;
+      height: auto;
     }
 
-    .seccion__novedades .row {
-        flex-direction: column-reverse;
+    .texto__triple {
+      text-align: center;
+      padding: 0 10px;
     }
+  }
 
-    .seccion__novedades {
-        padding: 30px 15px;
+  // Footer
+  footer {
+    text-align: center;
+    padding: 20px 10px;
+
+    .footer__column {
+      margin-bottom: 20px;
     }
+  }
+}
 
-    h2 {
-        margin-top: 10px;
-        font-size: 20px;
-    }
+@media (max-width: 576px) {
+  .titulo__header {
+    font-size: 1rem;
+  }
 
-    p {
-        font-size: 16px;
-    }
+  h2 {
+    font-size: 18px;
+  }
 
-    .tarjeta-producto img {
-        aspect-ratio: 1 / 1;
-    }
+  p {
+    font-size: 14px;
+  }
 
+  .navbar-brand img {
+    width: 40px;
+    height: 40px;
+  }
 
-
-
+  .hero__texto {
+    font-size: 1rem;
+  }
 }
