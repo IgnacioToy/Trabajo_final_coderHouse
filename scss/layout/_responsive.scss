@@ -1,119 +1,130 @@
+// Estilos Responsive para móviles
+// ==================================
+
 @media (max-width: 768px) {
-  // Tarjetas de productos
-  .tarjeta-producto {
-    width: 90%;
-    margin: 0 auto;
-  }
+  header {
+    flex-direction: column;
+    align-items: center;
 
-  .tarjeta-producto img {
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-  }
+    nav {
+      flex-direction: column;
+      gap: 10px;
+    }
 
-  // Sección novedades
-  .seccion__novedades {
-    padding: 30px 15px;
-
-    .row {
-      flex-direction: column-reverse;
+    .logo {
+      font-size: 24px;
     }
   }
 
-  // Títulos y párrafos
-  h2 {
-    margin-top: 10px;
-    font-size: 20px;
+  h1, h2 {
+    font-size: 24px;
+    text-align: center;
   }
 
   p {
     font-size: 16px;
+    text-align: center;
   }
 
-  // Hero
-  .hero {
+  // Hero General
+  .hero,
+  .hero__pulseras,
+  .hero__anillos,
+  .hero__aros {
     height: 60vh;
     background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
     text-align: center;
 
-    .hero__texto {
-      font-size: 1.2rem;
-      padding: 0 15px;
+    .hero__contenido {
+      max-width: 90%;
+    }
+
+    h2 {
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 16px;
     }
   }
 
-  // Header / navbar
-  .navbar-brand img {
-    width: 50px;
-    height: 50px;
+  // Secciones con filas de productos
+  .seccion__productos {
+    padding: 20px;
+
+    .row {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .tarjeta-producto {
+      width: 90%;
+      margin: 0 auto;
+
+      img {
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+      }
+    }
   }
 
-  .titulo__header {
-    font-size: 1.2rem;
-    text-align: center;
-  }
+  // Sección novedades (index)
+  .seccion__novedades {
+    flex-direction: column-reverse;
+    padding: 30px 20px;
 
-  .navbar-collapse {
-    text-align: center;
-  }
+    .contenido-novedades,
+    .imagen-novedades {
+      width: 100%;
+      text-align: center;
+    }
 
-  // Carrusel
-  .carousel-item img {
-    height: auto;
-    object-fit: cover;
-  }
-
-  // Cards
-  .card {
-    margin-bottom: 20px;
-  }
-
-  // Triple layout
-  .triple__section {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-
-    img {
+    .imagen-novedades img {
       width: 100%;
       height: auto;
-    }
-
-    .texto__triple {
-      text-align: center;
-      padding: 0 10px;
+      max-height: 300px;
+      object-fit: cover;
     }
   }
 
   // Footer
   footer {
+    flex-direction: column;
     text-align: center;
-    padding: 20px 10px;
 
-    .footer__column {
+    .col {
       margin-bottom: 20px;
     }
   }
 }
 
-@media (max-width: 576px) {
-  .titulo__header {
-    font-size: 1rem;
-  }
 
-  h2 {
-    font-size: 18px;
-  }
+  // Sección de contacto
+  .contacto {
+    padding: 30px 15px;
+    text-align: center;
 
-  p {
-    font-size: 14px;
-  }
+    form {
+      width: 100%;
 
-  .navbar-brand img {
-    width: 40px;
-    height: 40px;
-  }
+      input,
+      textarea {
+        font-size: 16px;
+        padding: 10px;
+      }
 
-  .hero__texto {
-    font-size: 1rem;
+      .btn {
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+
+    .form-row {
+      flex-direction: column;
+      gap: 10px;
+    }
   }
-}
